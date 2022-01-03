@@ -1,0 +1,18 @@
+{
+    "name": "Amazon Extensions",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Amazonの購入履歴を全てダウンロードする",
+    // "content_scripts": [
+    //     {
+    //       "run_at":"document_idle",
+    //       "matches": ["https://jp.mercari.com/transaction/m*"],
+    //       "js": ["js/jquery-3.6.0.min.js", "js/test010.js"]
+    //     }
+    // ],
+    "permissions": ["activeTab","scripting"],
+    "background": {
+        "service_worker": "js/test002.js"
+	},
+    "action": {}
+}
